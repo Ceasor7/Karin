@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karin Waidley, PhD | Contact</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: .8em;
+            border-radius: .3rem;
+            background-color: hsl(0, 0%, 65%);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: .3rem;
+            background-color: hsl(0, 0%, 55%);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: hsl(0, 0%, 45%);
+        }
+
+        /* Resetting some default styles for better consistency */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--primary-color);
+        }
+
+        :root {
+            --primary-color: #1E1E1E;
+            --secondary-color: #ffffff;
+        }
+
+        .darkmode {
+            --primary-color: #ffffff;
+            --secondary-color: #1E1E1E;
+        }
+
+        /* Navbar styles */
+        header {
+            background-color: #3A3A3A;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        .navbar-logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .navbar-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .dark-mode-toggle {
+            color: var(--secondary-color);
+            border: 2px solid currentColor;
+            padding: 4px;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .dark-mode-toggle,
+        .svg-icon {
+            margin-right: 20px;
+        }
+
+        /* Main content styles */
+        section {
+            margin-top: 20px;
+        }
+
+        .page-title {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        /* Contact form styles */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            color: var(--secondary-color);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+            margin-left: 60px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 60%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            margin-left: 60px;
+            background-color: white;
+            border: none;
+            border-radius: 7px;
+
+        }
+
+        /* New section styles */
+        .image-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .image-section img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* Add this CSS to make the two divs beside each other */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .flex-container>div {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .form-button {
+            margin-left: 100px;
+            margin-bottom: 20px;
+        }
+
+        .formSend-button {
+            padding: 8px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 7px;
+            border: none;
+        }
+
+        section {
+            margin-top: 20px;
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">Karin Waidley, PhD</div>
+            <div class="navbar-icons">
+                <button id="dark-mode-toggle" class="dark-mode-toggle">
+                    <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                        <path fill="currentColor"
+                            d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                            transform="translate(-8 -8)" />
+                    </svg>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
+                    style="fill:#FFFFFF;">
+                    <path
+                        d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <p class="page-title">Karin Waidley / About</p>
+        <hr>
+    </section>
+    <div class="flex-container">
+        <div>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" placeholder="Subject" name="subject" required>
+
+                <label for="interest">Interest:</label>
+                <select id="interest" name="interest">
+                    <option value="research">Research</option>
+                    <option value="speaking">Speaking</option>
+                    <option value="teaching">Teaching</option>
+                    <option value="community-reach">Community Reach</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Message" name="message" rows="6" required></textarea>
+
+
+            </form>
+        </div>
+        <!-- New section with image -->
+        <div class="image-section">
+            <img src="images/Karin.jpeg" alt="Karin Waidley">
+        </div>
+    </div>
+    <div class="form-button">
+        <button class="formSend-button" type="submit">Send</button>
+    </div>
+
+    <script src="darkmode.js"></script>
+</body>
+
+</html>

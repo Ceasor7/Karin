@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karin Waidley, PhD | Home</title>
+    <style>
+        /* Resetting some default styles for better consistency */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar styles */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+
+        .navbar-logo {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .navbar-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .dark-mode-toggle {
+            color: var(--secondary-color);
+            border: 2px solid currentColor;
+            padding: 4px;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .hamburger-menu {
+            color: var(--secondary-color);
+            border: 2px solid currentColor;
+            padding: 4px;
+            background: transparent;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Main content styles */
+        section {
+            margin-top: 20px;
+        }
+
+        /* Contact form styles */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        /* New section styles */
+        .image-section {
+            text-align: center;
+            margin-top: 20px;
+            margin-right: 20px;
+        }
+
+        .image-section img {
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* Add this CSS to make the two divs beside each other */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .flex-container>div {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        /* Home */
+        .home-details {
+            text-align: left;
+            margin-left: 80px;
+        }
+
+        .home-details p {
+            width: 80%;
+        }
+
+        .home-buttons {
+            margin-left: 80px;
+            justify-content: space-between;
+        }
+
+        .homeRedirect-buttons {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            padding-left: 60px;
+            padding-right: 60px;
+            border-radius: 15px;
+            border: none;
+        }
+
+        /* Home */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">Karin Waidley, PhD</div>
+            <div class="navbar-icons">
+                <button id="dark-mode-toggle" class="dark-mode-toggle">
+                    <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                        <path fill="currentColor"
+                            d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                            transform="translate(-8 -8)" />
+                    </svg>
+                </button>
+                <button class="hamburger-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50"
+                        style="fill:#EBEBEB;">
+                        <path
+                            d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+                        </path>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+    </header>
+    <div class="flex-container">
+        <div class="home-details">
+            <h2>Creative Social Change<br> Expert using Theatre, <br>Teaching, and Research</h2>
+            <p>I'm Karin Waidley, a versatile professional encompassing roles as an educator, artist, and scholar. Armed
+                with a Masters in Acting and a PhD in Theatre, my academic journey has centred on harnessing the power
+                of theatre for violence prevention. I founded a programme for adjudicated youth and directed the Theatre
+                program at Western Colorado University, specializing in original works and theatre for social justice.
+                As a Fulbright Scholar and current Resident Dramaturg at the University of Michigan, I've made a global
+                impact, addressing gender-based violence in Wyoming and collaborating with Kenyan artists on initiatives
+                like Theatre for Development. My ongoing research explores the nexus of storytelling, embodied
+                performance, and the neurobiology of trauma. A published author, I'm also editing an anthology on Kenyan
+                Theatre History and serve as the Editor of Theatre/Practice journal.</p>
+        </div>
+        <div class="image-section">
+            <img src="images/Karin.jpeg" alt="Karin Waidley">
+        </div>
+    </div>
+    <div class="home-buttons">
+        <button class="homeRedirect-buttons">About</button>
+        <button class="homeRedirect-buttons">Contact</button>
+    </div>
+</body>
+
+</html>
