@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <title>Karin Waidley, PhD | Contact</title>
+    <title>Karin Waidley, PhD | Home</title>
     <style>
         ::-webkit-scrollbar {
             width: .8em;
@@ -23,18 +23,6 @@
 
         ::-webkit-scrollbar-thumb:hover {
             background-color: hsl(0, 0%, 45%);
-        }
-
-        body,
-        h1,
-        h2,
-        h3,
-        p,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
         }
 
         /* Global styles */
@@ -53,9 +41,22 @@
             --secondary-color: #1E1E1E;
         }
 
+        /* Resetting some default styles for better consistency */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
         /* Navbar styles */
         header {
-            background-color: #3A3A3A;
+            background-color: #333;
             color: white;
             padding: 10px 0;
         }
@@ -100,44 +101,31 @@
             margin-top: 20px;
         }
 
-        .page-title {
-            color: var(--secondary-color);
-            margin-bottom: 20px;
-        }
-
         /* Contact form styles */
         form {
             max-width: 600px;
             margin: 0 auto;
-            color: var(--secondary-color);
         }
 
         label {
             display: block;
             margin-bottom: 8px;
-            text-align: left;
-            margin-left: 60px;
         }
 
         input,
         textarea,
         select {
-            font-family: 'Inter', sans-serif;
-            width: 60%;
+            width: 100%;
             padding: 8px;
             margin-bottom: 16px;
             box-sizing: border-box;
-            margin-left: 60px;
-            background-color: white;
-            border: none;
-            border-radius: 7px;
-
         }
 
         /* New section styles */
         .image-section {
             text-align: center;
             margin-top: 20px;
+            margin-right: 20px;
         }
 
         .image-section img {
@@ -145,7 +133,7 @@
             height: auto;
         }
 
-
+        /* Add this CSS to make the two divs beside each other */
         .flex-container {
             display: flex;
             justify-content: space-between;
@@ -157,12 +145,34 @@
             margin-right: 20px;
         }
 
-        .form-button {
-            margin-left: 60px;
-            margin-bottom: 20px;
+        /* Home */
+        .home-details {
+            text-align: left;
+            margin-left: 80px;
+            color: var(--secondary-color);
         }
 
-        .formSend-button {
+        .home-details h2 {
+            font-weight: 2em;
+            font-style: italic;
+        }
+
+        .home-details p {
+            width: 80%;
+        }
+
+        .home-buttons {
+            margin-top: 20px;
+            margin-left: 80px;
+            justify-content: space-between;
+
+        }
+
+        .home-buttons a {
+            margin-right: 10px;
+        }
+
+        .homeRedirect-buttons {
             padding: 10px;
             background-color: var(--secondary-color);
             color: var(--primary-color);
@@ -173,12 +183,7 @@
             cursor: pointer;
         }
 
-        section {
-            margin-top: 20px;
-            margin-left: 80px;
-            margin-right: 80px;
-        }
-
+        /* Home */
         /* sidebar menu */
         .sidebarmenu {
             background: transparent;
@@ -206,8 +211,7 @@
         }
 
         .sidebar a:hover {
-            color: #D9D9D9;
-            padding: 16px;
+            color: #f1f1f1;
         }
 
         .sidebar .closebtn {
@@ -227,8 +231,8 @@
 <body>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </div>
     <header>
         <div class="navbar">
@@ -253,50 +257,39 @@
         </div>
     </header>
     <div id="main">
-        <section>
-            <p class="page-title">Karin Waidley / Contact</p>
-            <hr>
-        </section>
         <div class="flex-container">
-            <div>
-                <form onsubmit="sendEmail(); reset(); return false;">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Email" name="email" required>
-
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" placeholder="Subject" name="subject" required>
-
-                    <label for="interest">Interest:</label>
-                    <select id="interest" name="interest">
-                        <option value="">Select an interest</option>
-                        <option value="creative-production">Creative Production</option>
-                        <option value="research">Research</option>
-                        <option value="speaking">Speaking</option>
-                        <option value="teaching">Teaching</option>
-                        <option value="community-reach">Community Reach</option>
-                        <option value="board-community-input">Board and Committee input</option>
-                        <option value="something-else">Something else</option>
-                    </select>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="Message" name="message" rows="6" required></textarea>
-
-                    <div class="form-button">
-                        <button class="formSend-button" type="submit">Send</button>
-                    </div>
-                </form>
+            <div class="home-details">
+                <h2>Creative Social Change<br> Expert using Theatre, <br>Teaching, and Research</h2>
+                <p>I'm Karin Waidley, a versatile professional encompassing roles as an educator, artist, and scholar.
+                    Armed
+                    with a Masters in Acting and a PhD in Theatre, my academic journey has centred on harnessing the
+                    power
+                    of theatre for violence prevention. I founded a programme for adjudicated youth and directed the
+                    Theatre
+                    program at Western Colorado University, specializing in original works and theatre for social
+                    justice.
+                    As a Fulbright Scholar and current Resident Dramaturg at the University of Michigan, I've made a
+                    global
+                    impact, addressing gender-based violence in Wyoming and collaborating with Kenyan artists on
+                    initiatives
+                    like Theatre for Development. My ongoing research explores the nexus of storytelling, embodied
+                    performance, and the neurobiology of trauma. A published author, I'm also editing an anthology on
+                    Kenyan
+                    Theatre History and serve as the Editor of Theatre/Practice journal.</p>
             </div>
-            <!-- New section with image -->
             <div class="image-section">
                 <img src="images/Karin.jpeg" alt="Karin Waidley">
             </div>
         </div>
+        <div class="home-buttons">
+            <a href="about.html">
+                <button class="homeRedirect-buttons">About</button>
+            </a>
+            <a href="contact.html">
+                <button class="homeRedirect-buttons">Contact</button>
+            </a>
+        </div>
     </div>
-    <script src="darkmode.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
@@ -307,21 +300,8 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginRight = "0";
         }
-
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "mosesnumi5@gmail.com",
-                Password: "marionita",
-                To: 'micheal3955@gmail.com',
-                From: "you@isp.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-        }
     </script>
+    <script src="darkMode.js"></script>
 </body>
 
 </html>

@@ -129,7 +129,7 @@
         }
 
         .dark-mode-toggle {
-            color: #D9D9D9;
+            color: var(--secondary-color);
             border: 2px solid currentColor;
             padding: 4px;
             background: transparent;
@@ -152,48 +152,6 @@
         }
 
         /* navbar */
-        /* sidebar menu */
-        .sidebarmenu {
-            background: transparent;
-            border: none;
-        }
-
-        .sidebar {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            right: 0;
-            background-color: #333;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .sidebar a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidebar a:hover {
-            color: #D9D9D9;
-            padding: 16px;
-        }
-
-        .sidebar .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        #main {
-            transition: margin-right .5s;
-        }
     </style>
 </head>
 
@@ -225,101 +183,90 @@
             </div>
         </div>
     </header>
-    <div id="main">
-        <section>
-            <p class="page-title">Karin Waidley / About</p>
-            <hr>
-        </section>
 
-        <section>
-            <nav>
-                Who i am
-            </nav>
+    <section>
+        <p class="page-title">Karin Waidley / About</p>
+        <hr>
+    </section>
 
-            <article>
-                I am Karin Waidley, a passionate and versatile professional deeply immersed in the world of theatre,
-                education, and scholarly pursuits. Rooted in a commitment to using the transformative power of theatre
-                for
-                social change, I've dedicated my career to fostering understanding and addressing critical issues,
-                particularly in the realm of violence prevention. With a foundation in both performance and academia, I
-                bring a unique perspective to my work, seeking to bridge the gap between theory and practice.
-            </article>
-            <hr>
-        </section>
-        <section>
-            <nav>
-                What i do
-            </nav>
+    <section>
+        <nav>
+            Who i am
+        </nav>
 
-            <article>
-                In the dynamic intersection of teaching, artistry, and scholarship, I craft narratives and experiences
-                that
-                resonate on both personal and societal levels. My professional journey encompasses founding and
-                directing
-                impactful theatre programs, both locally and internationally, and spearheading initiatives that harness
-                the
-                potential of theatre for social justice. As a Resident Dramaturg at the University of Michigan and
-                through
-                collaborative projects with Kenyan artists, I continue to direct, dramaturg, and engage in research that
-                explores the intricate connections between storytelling, embodied performance, and the neurobiology of
-                trauma.
-            </article>
-            <hr>
-        </section>
-        <section>
-            <nav>
-                My Qualifications
-            </nav>
+        <article>
+            I am Karin Waidley, a passionate and versatile professional deeply immersed in the world of theatre,
+            education, and scholarly pursuits. Rooted in a commitment to using the transformative power of theatre
+            for
+            social change, I've dedicated my career to fostering understanding and addressing critical issues,
+            particularly in the realm of violence prevention. With a foundation in both performance and academia, I
+            bring a unique perspective to my work, seeking to bridge the gap between theory and practice.
+        </article>
+        <hr>
+    </section>
+    <section>
+        <nav>
+            What i do
+        </nav>
 
-            <article>
-                Armed with a Masters in Acting from Northwestern and a PhD in Theatre from the University of Washington,
-                my
-                academic journey has been marked by a deep commitment to rigorous scholarship and practical application.
-                I've been honoured with a Fulbright Scholarship and Specialist designation, extending my impact
-                globally.
-                With a wealth of experience as a Professor and Director of the Theatre program at Western Colorado
-                University, I bring a rich blend of theoretical knowledge and practical expertise to my roles.
-            </article>
-            <hr>
-        </section>
+        <article>
+            In the dynamic intersection of teaching, artistry, and scholarship, I craft narratives and experiences
+            that
+            resonate on both personal and societal levels. My professional journey encompasses founding and
+            directing
+            impactful theatre programs, both locally and internationally, and spearheading initiatives that harness
+            the
+            potential of theatre for social justice. As a Resident Dramaturg at the University of Michigan and
+            through
+            collaborative projects with Kenyan artists, I continue to direct, dramaturg, and engage in research that
+            explores the intricate connections between storytelling, embodied performance, and the neurobiology of
+            trauma.
+        </article>
+        <hr>
+    </section>
+    <section>
+        <nav>
+            My Qualifications
+        </nav>
 
-        <section>
-            <nav>
-                My Values
-            </nav>
+        <article>
+            Armed with a Masters in Acting from Northwestern and a PhD in Theatre from the University of Washington,
+            my
+            academic journey has been marked by a deep commitment to rigorous scholarship and practical application.
+            I've been honoured with a Fulbright Scholarship and Specialist designation, extending my impact
+            globally.
+            With a wealth of experience as a Professor and Director of the Theatre program at Western Colorado
+            University, I bring a rich blend of theoretical knowledge and practical expertise to my roles.
+        </article>
+        <hr>
+    </section>
 
-            <article>
-                At the core of my professional ethos lies a commitment to using theatre as a catalyst for positive
-                change.
-                My values are rooted in social justice, education, and community engagement. I believe in the power of
-                storytelling and embodied performance to not only entertain but also to create empathetic understanding
-                and
-                address societal challenges. Collaborative, innovative, and socially conscious, I strive to infuse my
-                work
-                with these values, whether directing a play, leading educational initiatives, or contributing to
-                scholarly
-                publications.
-            </article>
-            <hr>
-        </section>
-        <div class="about-button">
-            <a href="contact.html">
-                <button class="contact-button">Get in Touch</button>
-            </a>
+    <section>
+        <nav>
+            My Values
+        </nav>
 
-        </div>
+        <article>
+            At the core of my professional ethos lies a commitment to using theatre as a catalyst for positive
+            change.
+            My values are rooted in social justice, education, and community engagement. I believe in the power of
+            storytelling and embodied performance to not only entertain but also to create empathetic understanding
+            and
+            address societal challenges. Collaborative, innovative, and socially conscious, I strive to infuse my
+            work
+            with these values, whether directing a play, leading educational initiatives, or contributing to
+            scholarly
+            publications.
+        </article>
+        <hr>
+    </section>
+    <div class="about-button">
+        <a href="contact.html">
+            <button class="contact-button">Get in Touch</button>
+        </a>
+
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginRight = "250px";
-        }
 
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginRight = "0";
-        }
-    </script>
     <script src="darkMode.js"></script>
 </body>
 

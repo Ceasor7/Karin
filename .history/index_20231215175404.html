@@ -81,7 +81,7 @@
         }
 
         .dark-mode-toggle {
-            color: #D9D9D9;
+            color: var(--secondary-color);
             border: 2px solid currentColor;
             padding: 4px;
             background: transparent;
@@ -184,56 +184,14 @@
         }
 
         /* Home */
-        /* sidebar menu */
-        .sidebarmenu {
-            background: transparent;
-            border: none;
-        }
-
-        .sidebar {
-            height: 100%;
-            width: 0;
-            position: fixed;
-            right: 0;
-            background-color: #333;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-
-        .sidebar a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 18px;
-            color: white;
-            display: block;
-            transition: 0.3s;
-        }
-
-        .sidebar a:hover {
-            color: #D9D9D9;
-            padding: 16px;
-        }
-
-        .sidebar .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        #main {
-            transition: margin-right .5s;
-        }
     </style>
 </head>
 
 <body>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
     </div>
     <header>
         <div class="navbar">
@@ -291,17 +249,8 @@
             </a>
         </div>
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginRight = "250px";
-        }
 
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginRight = "0";
-        }
-    </script>
+
     <script src="darkMode.js"></script>
 </body>
 

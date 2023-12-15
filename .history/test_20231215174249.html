@@ -50,7 +50,6 @@
 
         .sidebarmenu {
             background: transparent;
-            border: none;
         }
 
         .sidebar {
@@ -87,6 +86,7 @@
 
         #main {
             transition: margin-right .5s;
+            padding: 16px;
         }
 
         /* Style for content */
@@ -113,7 +113,7 @@
                             transform="translate(-8 -8)" />
                     </svg>
                 </button>
-                <button class="sidebarmenu" onclick="openNav()">
+                <button class="sidebarmenu">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50"
                         style="fill:#FFFFFF;">
                         <path
@@ -132,17 +132,6 @@
             <p>This is the main content of your page.</p>
         </div>
     </div>
-    <script>
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
-            document.getElementById("main").style.marginRight = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginRight = "0";
-        }
-    </script>
 </body>
 
 </html>
