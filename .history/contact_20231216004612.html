@@ -179,6 +179,16 @@
             margin-right: 80px;
         }
 
+        /*checkboxes*/
+        .checkbox-group {
+            display: flex;
+            margin-bottom: 16px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 0;
+        }
+
         /* sidebar menu */
         .sidebarmenu {
             background: transparent;
@@ -227,8 +237,8 @@
 <body>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </div>
     <header>
         <div class="navbar">
@@ -271,17 +281,27 @@
                     <label for="subject">Subject:</label>
                     <input type="text" id="subject" placeholder="Subject" name="subject" required>
 
-                    <label for="interest">Interest:</label>
-                    <select id="interest" name="interest">
-                        <option value="">Select an interest</option>
-                        <option value="creative-production">Creative Production</option>
-                        <option value="research">Research</option>
-                        <option value="speaking">Speaking</option>
-                        <option value="teaching">Teaching</option>
-                        <option value="community-reach">Community Reach</option>
-                        <option value="board-community-input">Board and Committee input</option>
-                        <option value="something-else">Something else</option>
-                    </select>
+                    <label>Interests:</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="speaking" name="interests[]" value="speaking">
+                        <label for="speaking">Speaking</label>
+
+                        <input type="checkbox" id="research" name="interests[]" value="research">
+                        <label for="research">Research</label>
+
+                        <input type="checkbox" id="training" name="interests[]" value="training">
+                        <label for="training">Training</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="speaking" name="interests[]" value="speaking">
+                        <label for="speaking">Speaking</label>
+
+                        <input type="checkbox" id="research" name="interests[]" value="research">
+                        <label for="research">Research</label>
+
+                        <input type="checkbox" id="training" name="interests[]" value="training">
+                        <label for="training">Training</label>
+                    </div>
 
                     <label for="message">Message:</label>
                     <textarea id="message" placeholder="Message" name="message" rows="6" required></textarea>

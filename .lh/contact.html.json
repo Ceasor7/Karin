@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 20,
+            "activePatchIndex": 22,
             "patches": [
                 {
                     "date": 1702641058733,
@@ -88,6 +88,14 @@
                 {
                     "date": 1702653166450,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -294,8 +294,10 @@\n                 <img src=\"images/Karin.jpeg\" alt=\"Karin Waidley\">\r\n             </div>\r\n         </div>\r\n     </div>\r\n+    <script src=\"darkmode.js\"></script>\r\n+    <script src=\"https://smtpjs.com/v3/smtp.js\"></script>\r\n     <script>\r\n         function openNav() {\r\n             document.getElementById(\"mySidebar\").style.width = \"250px\";\r\n             document.getElementById(\"main\").style.marginRight = \"250px\";\r\n@@ -304,12 +306,9 @@\n         function closeNav() {\r\n             document.getElementById(\"mySidebar\").style.width = \"0\";\r\n             document.getElementById(\"main\").style.marginRight = \"0\";\r\n         }\r\n-    </script>\r\n-    <script src=\"darkmode.js\"></script>\r\n-    <script src=\"https://smtpjs.com/v3/smtp.js\"></script>\r\n-    <script>\r\n+        \r\n         function sendEmail() {\r\n             Email.send({\r\n                 Host: \"smtp.gmail.com\",\r\n                 Username: \"mosesnumi5@gmail.com\",\r\n"
+                },
+                {
+                    "date": 1702664404941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,49 +52,49 @@\n             --primary-color: #D9D9D9;\r\n             --secondary-color: #1E1E1E;\r\n         }\r\n \r\n-        /* Navbar styles */\r\n-        header {\r\n-            background-color: #3A3A3A;\r\n-            color: white;\r\n-            padding: 10px 0;\r\n-        }\r\n+ /* Navbar styles */\r\n+ header {\r\n+    background-color: #333;\r\n+    color: white;\r\n+}\r\n \r\n-        .navbar {\r\n-            display: flex;\r\n-            justify-content: space-between;\r\n-            align-items: center;\r\n-            padding: 20px;\r\n-            margin-left: 60px;\r\n-            margin-right: 60px;\r\n-        }\r\n+.navbar {\r\n+    display: flex;\r\n+    justify-content: space-between;\r\n+    align-items: center;\r\n+    padding: 7px;\r\n+    margin-left: 60px;\r\n+    margin-right: 60px;\r\n+}\r\n \r\n-        .navbar-logo {\r\n-            font-size: 2em;\r\n-            font-weight: bold;\r\n-        }\r\n+.navbar-logo img {\r\n+    height: 72px;\r\n+    width: 300px;\r\n+    margin-left: 27px;\r\n+}\r\n \r\n-        .navbar-icons {\r\n-            display: flex;\r\n-            gap: 10px;\r\n-        }\r\n+.navbar-icons {\r\n+    display: flex;\r\n+    gap: 10px;\r\n+}\r\n \r\n-        .dark-mode-toggle {\r\n-            color: #D9D9D9;\r\n-            border: 2px solid currentColor;\r\n-            padding: 4px;\r\n-            background: transparent;\r\n-            cursor: pointer;\r\n-            border-radius: 5px;\r\n-            width: 30px;\r\n-            height: 30px;\r\n-        }\r\n+.dark-mode-toggle {\r\n+    color: #D9D9D9;\r\n+    border: 2px solid currentColor;\r\n+    padding: 4px;\r\n+    background: transparent;\r\n+    cursor: pointer;\r\n+    border-radius: 5px;\r\n+    width: 30px;\r\n+    height: 30px;\r\n+}\r\n \r\n-        .dark-mode-toggle,\r\n-        .svg-icon {\r\n-            margin-right: 20px;\r\n-        }\r\n+.dark-mode-toggle,\r\n+.svg-icon {\r\n+    margin-right: 20px;\r\n+}\r\n \r\n         /* Main content styles */\r\n         section {\r\n             margin-top: 20px;\r\n"
+                },
+                {
+                    "date": 1702664445859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -231,9 +231,11 @@\n         <a href=\"contact.html\">Contact</a>\r\n     </div>\r\n     <header>\r\n         <div class=\"navbar\">\r\n-            <div class=\"navbar-logo\">Karin Waidley, PhD</div>\r\n+            <div class=\"navbar-logo\">\r\n+                <img src=\"images/Karin.svg\">\r\n+            </div>\r\n             <div class=\"navbar-icons\">\r\n                 <button id=\"dark-mode-toggle\" class=\"dark-mode-toggle\">\r\n                     <svg width=\"100%\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 496 496\">\r\n                         <path fill=\"currentColor\"\r\n"
                 }
             ],
             "date": 1702641058733,

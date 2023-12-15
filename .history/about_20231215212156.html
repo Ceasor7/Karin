@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap"
         rel="stylesheet">
-    <title>Karin Waidley, PhD | Contact</title>
+    <link rel="stylesheet" href="stingo.css">
+    <title>Karin Waidley,PhD | About</title>
     <style>
         ::-webkit-scrollbar {
             width: .8em;
@@ -25,18 +26,6 @@
             background-color: hsl(0, 0%, 45%);
         }
 
-        body,
-        h1,
-        h2,
-        h3,
-        p,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
         /* Global styles */
         body {
             font-family: 'Inter', sans-serif;
@@ -51,6 +40,66 @@
         .darkmode {
             --primary-color: #D9D9D9;
             --secondary-color: #1E1E1E;
+        }
+
+        /* about page */
+        nav {
+            float: left;
+            width: 20%;
+            font-size: 2em;
+            color: var(--secondary-color);
+        }
+
+        article {
+            float: left;
+            width: 80%;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .about-button {
+            margin-top: 20px;
+            text-align: right;
+            margin-bottom: 15px;
+            margin-right: 80px;
+        }
+
+        .contact-button {
+            padding: 10px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding-left: 60px;
+            padding-right: 60px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .page-title {
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        /* about page */
+        /* navbar */
+        /* Resetting some default styles for better consistency */
+        body,
+        h1,
+        h2,
+        h3,
+        p,
+        ul,
+        li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
         }
 
         /* Navbar styles */
@@ -97,88 +146,12 @@
 
         /* Main content styles */
         section {
-            margin-top: 20px;
-        }
-
-        .page-title {
-            margin-bottom: 40px;
-            color: var(--secondary-color);
-        }
-
-        /* Contact form styles */
-        form {
-            max-width: 600px;
-            margin: 0 auto;
-            color: var(--secondary-color);
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-            text-align: left;
-            margin-left: 60px;
-        }
-
-        input,
-        textarea,
-        select {
-            font-family: 'Inter', sans-serif;
-            width: 80%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-            margin-left: 60px;
-            background-color: white;
-            border: none;
-            border-radius: 7px;
-
-        }
-
-        /* New section styles */
-        .image-section {
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .image-section img {
-            max-width: 50%;
-            height: auto;
-        }
-
-
-        .flex-container {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-        }
-
-        .flex-container>div {
-            flex: 1;
-            margin-right: 20px;
-        }
-
-        .form-button {
-            margin-left: 60px;
-            margin-bottom: 20px;
-        }
-
-        .formSend-button {
-            padding: 10px;
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            padding-left: 60px;
-            padding-right: 60px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-        }
-
-        section {
             margin-top: 40px;
             margin-left: 80px;
             margin-right: 80px;
         }
 
+        /* navbar */
         /* sidebar menu */
         .sidebarmenu {
             background: transparent;
@@ -227,8 +200,8 @@
 <body>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
     </div>
     <header>
         <div class="navbar">
@@ -256,49 +229,88 @@
     </header>
     <div id="main">
         <section>
-            <p class="page-title">Karin Waidley / Contact</p>
+            <p class="page-title">Karin Waidley / About</p>
             <hr>
         </section>
-        <div class="flex-container">
-            <div>
-                <form onsubmit="sendEmail(); reset(); return false;">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Name" name="name" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Email" name="email" required>
+        <section>
+            <nav>
+                Who i am
+            </nav>
 
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" placeholder="Subject" name="subject" required>
+            <article>
+                I am Karin Waidley, a passionate and versatile professional deeply immersed in the world of theatre,
+                education, and scholarly pursuits. Rooted in a commitment to using the transformative power of theatre
+                for
+                social change, I've dedicated my career to fostering understanding and addressing critical issues,
+                particularly in the realm of violence prevention. With a foundation in both performance and academia, I
+                bring a unique perspective to my work, seeking to bridge the gap between theory and practice.
+            </article>
+            <hr>
+        </section>
+        <section>
+            <nav>
+                What i do
+            </nav>
 
-                    <label for="interest">Interest:</label>
-                    <select id="interest" name="interest">
-                        <option value="">Select an interest</option>
-                        <option value="creative-production">Creative Production</option>
-                        <option value="research">Research</option>
-                        <option value="speaking">Speaking</option>
-                        <option value="teaching">Teaching</option>
-                        <option value="community-reach">Community Reach</option>
-                        <option value="board-community-input">Board and Committee input</option>
-                        <option value="something-else">Something else</option>
-                    </select>
+            <article>
+                In the dynamic intersection of teaching, artistry, and scholarship, I craft narratives and experiences
+                that
+                resonate on both personal and societal levels. My professional journey encompasses founding and
+                directing
+                impactful theatre programs, both locally and internationally, and spearheading initiatives that harness
+                the
+                potential of theatre for social justice. As a Resident Dramaturg at the University of Michigan and
+                through
+                collaborative projects with Kenyan artists, I continue to direct, dramaturg, and engage in research that
+                explores the intricate connections between storytelling, embodied performance, and the neurobiology of
+                trauma.
+            </article>
+            <hr>
+        </section>
+        <section>
+            <nav>
+                My Qualifications
+            </nav>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" placeholder="Message" name="message" rows="6" required></textarea>
+            <article>
+                Armed with a Masters in Acting from Northwestern and a PhD in Theatre from the University of Washington,
+                my
+                academic journey has been marked by a deep commitment to rigorous scholarship and practical application.
+                I've been honoured with a Fulbright Scholarship and Specialist designation, extending my impact
+                globally.
+                With a wealth of experience as a Professor and Director of the Theatre program at Western Colorado
+                University, I bring a rich blend of theoretical knowledge and practical expertise to my roles.
+            </article>
+            <hr>
+        </section>
 
-                    <div class="form-button">
-                        <button class="formSend-button" type="submit">SEND</button>
-                    </div>
-                </form>
-            </div>
-            <!-- New section with image -->
-            <div class="image-section">
-                <img src="images/Karin.jpeg" alt="Karin Waidley">
-            </div>
+        <section>
+            <nav>
+                My Values
+            </nav>
+
+            <article>
+                At the core of my professional ethos lies a commitment to using theatre as a catalyst for positive
+                change.
+                My values are rooted in social justice, education, and community engagement. I believe in the power of
+                storytelling and embodied performance to not only entertain but also to create empathetic understanding
+                and
+                address societal challenges. Collaborative, innovative, and socially conscious, I strive to infuse my
+                work
+                with these values, whether directing a play, leading educational initiatives, or contributing to
+                scholarly
+                publications.
+            </article>
+            <hr>
+        </section>
+        <div class="about-button">
+            <a href="contact.html">
+                <button class="contact-button">Get in Touch</button>
+            </a>
+
         </div>
     </div>
-    <script src="darkmode.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script>
         function openNav() {
             document.getElementById("mySidebar").style.width = "250px";
@@ -309,21 +321,12 @@
             document.getElementById("mySidebar").style.width = "0";
             document.getElementById("main").style.marginRight = "0";
         }
-
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "mosesnumi5@gmail.com",
-                Password: "marionita",
-                To: 'micheal3955@gmail.com',
-                From: "you@isp.com",
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-        }
     </script>
+    <script src="darkMode.js"></script>
 </body>
+
+
+
+
 
 </html>

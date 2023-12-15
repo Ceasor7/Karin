@@ -11,25 +11,13 @@
     <link rel="stylesheet" href="stingo.css">
     <title>Karin Waidley,PhD | About</title>
     <style>
-        ::-webkit-scrollbar {
-            width: .8em;
-            border-radius: .3rem;
-            background-color: hsl(0, 0%, 65%);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            border-radius: .3rem;
-            background-color: hsl(0, 0%, 55%);
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background-color: hsl(0, 0%, 45%);
-        }
-
         /* Global styles */
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--primary-color);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
         :root {
@@ -40,66 +28,6 @@
         .darkmode {
             --primary-color: #D9D9D9;
             --secondary-color: #1E1E1E;
-        }
-
-        /* about page */
-        nav {
-            float: left;
-            width: 20%;
-            font-size: 2em;
-            color: var(--secondary-color);
-        }
-
-        article {
-            float: left;
-            width: 80%;
-            margin-bottom: 40px;
-            color: var(--secondary-color);
-        }
-
-        /* Clear floats after the columns */
-        section::after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        .about-button {
-            margin-top: 20px;
-            text-align: right;
-            margin-bottom: 15px;
-            margin-right: 80px;
-        }
-
-        .contact-button {
-            padding: 10px;
-            background-color: var(--secondary-color);
-            color: var(--primary-color);
-            padding-left: 60px;
-            padding-right: 60px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .page-title {
-            margin-bottom: 40px;
-            color: var(--secondary-color);
-        }
-
-        /* about page */
-        /* navbar */
-        /* Resetting some default styles for better consistency */
-        body,
-        h1,
-        h2,
-        h3,
-        p,
-        ul,
-        li {
-            margin: 0;
-            padding: 0;
-            list-style: none;
         }
 
         /* Navbar styles */
@@ -113,14 +41,18 @@
             justify-content: space-between;
             align-items: center;
             padding: 7px;
-            margin-left: 60px;
-            margin-right: 60px;
+            margin-left: 10px;
+            /* Adjusted for smaller screens */
+            margin-right: 10px;
+            /* Adjusted for smaller screens */
         }
 
         .navbar-logo img {
-            height: 72px;
-            width: 300px;
-            margin-left: 27px;
+            height: auto;
+            width: 200px;
+            /* Adjusted for smaller screens */
+            margin-left: 10px;
+            /* Adjusted for smaller screens */
         }
 
         .navbar-icons {
@@ -139,25 +71,16 @@
             height: 30px;
         }
 
-        .dark-mode-toggle,
-        .svg-icon {
-            margin-right: 20px;
-        }
-
         /* Main content styles */
         section {
             margin-top: 40px;
-            margin-left: 80px;
-            margin-right: 80px;
+            margin-left: 10px;
+            /* Adjusted for smaller screens */
+            margin-right: 10px;
+            /* Adjusted for smaller screens */
         }
 
-        /* navbar */
-        /* sidebar menu */
-        .sidebarmenu {
-            background: transparent;
-            border: none;
-        }
-
+        /* Sidebar menu styles */
         .sidebar {
             height: 100%;
             width: 0;
@@ -170,9 +93,10 @@
         }
 
         .sidebar a {
-            padding: 8px 8px 8px 32px;
+            padding: 8px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
+            /* Adjusted for smaller screens */
             color: white;
             display: block;
             transition: 0.3s;
@@ -180,19 +104,56 @@
 
         .sidebar a:hover {
             color: #D9D9D9;
-            padding: 16px;
+            padding: 12px;
+            /* Adjusted for smaller screens */
         }
 
         .sidebar .closebtn {
             position: absolute;
             top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
+            right: 10px;
+            /* Adjusted for smaller screens */
+            font-size: 24px;
+            /* Adjusted for smaller screens */
+            margin-left: 10px;
+            /* Adjusted for smaller screens */
         }
 
         #main {
             transition: margin-right .5s;
+        }
+
+        /* Media queries for responsiveness */
+        @media only screen and (min-width: 600px) {
+            .navbar {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+
+            .navbar-logo img {
+                width: 250px;
+            }
+
+            section {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .navbar {
+                margin-left: 60px;
+                margin-right: 60px;
+            }
+
+            .navbar-logo img {
+                width: 300px;
+            }
+
+            section {
+                margin-left: 60px;
+                margin-right: 60px;
+            }
         }
     </style>
 </head>

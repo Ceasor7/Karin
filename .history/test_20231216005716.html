@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Select Dropdown</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .dropdown-checkbox {
+            display: block;
+            padding: 8px;
+        }
+
+        .dropdown-checkbox label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .dropdown-content.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dropdown-container">
+        <button class="dropdown-button" onclick="toggleDropdown()">Select Options</button>
+        <div class="dropdown-content" id="dropdownContent">
+            <div class="dropdown-checkbox">
+                <input type="checkbox" id="option1" name="options[]" value="option1">
+                <label for="option1">Option 1</label>
+            </div>
+            <div class="dropdown-checkbox">
+                <input type="checkbox" id="option2" name="options[]" value="option2">
+                <label for="option2">Option 2</label>
+            </div>
+            <div class="dropdown-checkbox">
+                <input type="checkbox" id="option3" name="options[]" value="option3">
+                <label for="option3">Option 3</label>
+            </div>
+            <!-- Add more options as needed -->
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            dropdownContent.classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown-button')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
