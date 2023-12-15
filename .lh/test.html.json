@@ -1,0 +1,70 @@
+{
+    "sourceFile": "test.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 13,
+            "patches": [
+                {
+                    "date": 1702643132446,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1702644956308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n <head>\r\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Contact form</title>\r\n+    <link rel=\"stylesheet\" href=\"stingo.css\">\r\n+    <script src=\"https://kit.fontawesome.com/a076d05399.js\" crossorigin=\"anonymous\"></script>\r\n </head>\r\n \r\n <body>\r\n \r\n"
+                },
+                {
+                    "date": 1702645012712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n     <script src=\"https://kit.fontawesome.com/a076d05399.js\" crossorigin=\"anonymous\"></script>\r\n </head>\r\n \r\n <body>\r\n+    <div class=\"sidebar\">\r\n \r\n+    </div>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1702645032581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n </head>\r\n \r\n <body>\r\n     <div class=\"sidebar\">\r\n-\r\n+        <header>Karin Waidley</header>\r\n     </div>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1702645069196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,12 @@\n \r\n <body>\r\n     <div class=\"sidebar\">\r\n         <header>Karin Waidley</header>\r\n+        <ul>\r\n+            <li>About</li>\r\n+            <li>Contact</li>\r\n+        </ul>\r\n     </div>\r\n </body>\r\n \r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1702645969631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n <body>\r\n     <div class=\"sidebar\">\r\n         <header>Karin Waidley</header>\r\n         <ul>\r\n-            <li>About</li>\r\n-            <li>Contact</li>\r\n+            <li><a href=\"about.html\"></a>About</li>\r\n+            <li><a href=\"contact.html\"></a>Contact</li>\r\n         </ul>\r\n     </div>\r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1702646125735,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,10 +12,10 @@\n <body>\r\n     <div class=\"sidebar\">\r\n         <header>Karin Waidley</header>\r\n         <ul>\r\n-            <li><a href=\"about.html\"></a>About</li>\r\n-            <li><a href=\"contact.html\"></a>Contact</li>\r\n+            <li><a href=\"about.html\">About</a></li>\r\n+            <li><a href=\"contact.html\">Contact</a></li>\r\n         </ul>\r\n     </div>\r\n </body>\r\n \r\n"
+                },
+                {
+                    "date": 1702646523456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,11 @@\n     <link rel=\"stylesheet\" href=\"stingo.css\">\r\n     <script src=\"https://kit.fontawesome.com/a076d05399.js\" crossorigin=\"anonymous\"></script>\r\n </head>\r\n \r\n+\r\n <body>\r\n+    <input type=\"checkbox\" id=\"check\">\r\n     <div class=\"sidebar\">\r\n         <header>Karin Waidley</header>\r\n         <ul>\r\n             <li><a href=\"about.html\">About</a></li>\r\n"
+                },
+                {
+                    "date": 1702646636274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,12 @@\n \r\n \r\n <body>\r\n     <input type=\"checkbox\" id=\"check\">\r\n+    <label for=\"check\">\r\n+        <i class=\"fas fa-bars\" id=\"btn\"></i>\r\n+        <i class=\"fas fa-times\" id=\"cancel\"></i>\r\n+    </label>\r\n     <div class=\"sidebar\">\r\n         <header>Karin Waidley</header>\r\n         <ul>\r\n             <li><a href=\"about.html\">About</a></li>\r\n"
+                },
+                {
+                    "date": 1702646786233,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,28 @@\n+<!DOCTYPE html>\r\n+<html lang=\"en\">\r\n+\r\n+<head>\r\n+    <meta charset=\"UTF-8\">\r\n+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n+    <title>Contact form</title>\r\n+    <link rel=\"stylesheet\" href=\"stingo.css\">\r\n+    <script src=\"https://kit.fontawesome.com/a076d05399.js\" crossorigin=\"anonymous\"></script>\r\n+</head>\r\n+\r\n+\r\n+<body>\r\n+    <input type=\"checkbox\" id=\"check\">\r\n+    <label for=\"check\">\r\n+        <i class=\"fa-solid fa-bars\"></i>\r\n+        <i class=\"fa-solid fa-square-xmark\"></i>\r\n+    </label>\r\n+    <div class=\"sidebar\">\r\n+        <header>Karin Waidley</header>\r\n+        <ul>\r\n+            <li><a href=\"about.html\">About</a></li>\r\n+            <li><a href=\"contact.html\">Contact</a></li>\r\n+        </ul>\r\n+    </div>\r\n+</body>\r\n+\r\n+</html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1702646961169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,14 @@\n \r\n <body>\r\n     <input type=\"checkbox\" id=\"check\">\r\n     <label for=\"check\">\r\n-        <i class=\"fa-solid fa-bars\"></i>\r\n+        <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\"\r\n+            style=\"fill:#FFFFFF;\">\r\n+            <path\r\n+                d=\"M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z\">\r\n+            </path>\r\n+        </svg>\r\n         <i class=\"fa-solid fa-square-xmark\"></i>\r\n     </label>\r\n     <div class=\"sidebar\">\r\n         <header>Karin Waidley</header>\r\n"
+                },
+                {
+                    "date": 1702647075479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,14 @@\n             <path\r\n                 d=\"M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z\">\r\n             </path>\r\n         </svg>\r\n-        <i class=\"fa-solid fa-square-xmark\"></i>\r\n+        <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\"\r\n+            style=\"fill:#FFFFFF;\">\r\n+            <path\r\n+                d=\"M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z\">\r\n+            </path>\r\n+        </svg>\r\n     </label>\r\n     <div class=\"sidebar\">\r\n         <header>Karin Waidley</header>\r\n         <ul>\r\n"
+                },
+                {
+                    "date": 1702647195978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n     <meta charset=\"UTF-8\">\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n     <title>Contact form</title>\r\n     <link rel=\"stylesheet\" href=\"stingo.css\">\r\n-    <script src=\"https://kit.fontawesome.com/a076d05399.js\" crossorigin=\"anonymous\"></script>\r\n+    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\r\n </head>\r\n \r\n \r\n <body>\r\n"
+                },
+                {
+                    "date": 1702647222834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,20 +12,10 @@\n \r\n <body>\r\n     <input type=\"checkbox\" id=\"check\">\r\n     <label for=\"check\">\r\n-        <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\"\r\n-            style=\"fill:#FFFFFF;\">\r\n-            <path\r\n-                d=\"M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z\">\r\n-            </path>\r\n-        </svg>\r\n-        <svg xmlns=\"http://www.w3.org/2000/svg\" x=\"0px\" y=\"0px\" width=\"50\" height=\"50\" viewBox=\"0 0 50 50\"\r\n-            style=\"fill:#FFFFFF;\">\r\n-            <path\r\n-                d=\"M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z\">\r\n-            </path>\r\n-        </svg>\r\n+        <i class=\"fa fa-car\" style=\"font-size:48px;\"></i>\r\n+        <i class=\"fa fa-car\" style=\"font-size:48px;\"></i>\r\n     </label>\r\n     <div class=\"sidebar\">\r\n         <header>Karin Waidley</header>\r\n         <ul>\r\n@@ -34,33 +24,5 @@\n         </ul>\r\n     </div>\r\n </body>\r\n \r\n-</html>\n-<!DOCTYPE html>\r\n-<html lang=\"en\">\r\n-\r\n-<head>\r\n-    <meta charset=\"UTF-8\">\r\n-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n-    <title>Contact form</title>\r\n-    <link rel=\"stylesheet\" href=\"stingo.css\">\r\n-    <script src=\"https://kit.fontawesome.com/a076d05399.js\" crossorigin=\"anonymous\"></script>\r\n-</head>\r\n-\r\n-\r\n-<body>\r\n-    <input type=\"checkbox\" id=\"check\">\r\n-    <label for=\"check\">\r\n-        <i class=\"fas fa-bars\" id=\"btn\"></i>\r\n-        <i class=\"fas fa-times\" id=\"cancel\"></i>\r\n-    </label>\r\n-    <div class=\"sidebar\">\r\n-        <header>Karin Waidley</header>\r\n-        <ul>\r\n-            <li><a href=\"about.html\">About</a></li>\r\n-            <li><a href=\"contact.html\">Contact</a></li>\r\n-        </ul>\r\n-    </div>\r\n-</body>\r\n-\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1702643132446,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Contact form</title>\r\n</head>\r\n\r\n<body>\r\n\r\n</body>\r\n\r\n</html>"
+        }
+    ]
+}

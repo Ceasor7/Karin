@@ -15,7 +15,6 @@ body {
     width: 250px;
     height: 100%;
     background: #042331;
-    transition: all .5s ease;
 }
 
 .sidebar header {
@@ -76,9 +75,4 @@ label #cancel {
     top: 17px;
     font-size: 30px;
     color: #0a5275;
-    padding: 4px 9px;
-}
-
-#check:checked~.sidebar {
-    left: 0;
 }

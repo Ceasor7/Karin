@@ -4,10 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;900&display=swap"
-        rel="stylesheet">
     <title>Karin Waidley, PhD | Contact</title>
     <style>
         ::-webkit-scrollbar {
@@ -39,7 +35,7 @@
 
         /* Global styles */
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: Arial, sans-serif;
             background-color: var(--primary-color);
         }
 
@@ -122,7 +118,6 @@
         input,
         textarea,
         select {
-            font-family: 'Inter', sans-serif;
             width: 60%;
             padding: 8px;
             margin-bottom: 16px;
@@ -158,7 +153,7 @@
         }
 
         .form-button {
-            margin-left: 60px;
+            margin-left: 90px;
             margin-bottom: 20px;
         }
 
@@ -221,7 +216,6 @@
 
                 <label for="interest">Interest:</label>
                 <select id="interest" name="interest">
-                    <option value="">Select an interest</option>
                     <option value="creative-production">Creative Production</option>
                     <option value="research">Research</option>
                     <option value="speaking">Speaking</option>
@@ -251,10 +245,10 @@
     <script>
         function sendEmail() {
             Email.send({
-                Host: "smtp.gmail.com",
-                Username: "mosesnumi5@gmail.com",
-                Password: "marionita",
-                To: 'micheal3955@gmail.com',
+                Host: "smtp.elasticemail.com",
+                Username: "username",
+                Password: "password",
+                To: 'them@website.com',
                 From: "you@isp.com",
                 Subject: "This is the subject",
                 Body: "And this is the body"
